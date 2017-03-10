@@ -10,4 +10,5 @@
     <dimen name="score_text_size">56sp</dimen>
     <dimen name="margin_res">16dp</dimen>
     <dimen name="miss_text">24sp</dimen>
+    <dimen name="scoreMargin">24dp</dimen>
 </resources>

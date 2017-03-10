@@ -8,19 +8,21 @@
     tools:context="com.example.farnazroudsari.molkkyscorecounter.MainActivity">
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <LinearLayout
-                style="@style/layoutHorizontal">
+
+            <LinearLayout style="@style/layoutHorizontal">
 
 
                 <LinearLayout
                     android:id="@+id/l1"
-                    style="@style/layoutVertical"
-                    >
+                    style="@style/layoutVertical">
 
                     <Button
                         android:id="@+id/btn"
@@ -30,8 +32,7 @@
                         android:onClick="changeScoreOfTeamA"
                         android:text="@string/TeamA"
                         android:textColor="@color/teamColor"
-                        android:textSize="@dimen/team_text_size"
-                        />
+                        android:textSize="@dimen/team_text_size" />
 
                     <TextView
                         android:id="@+id/team_a_score"
@@ -39,16 +40,14 @@
                         android:padding="@dimen/margin"
                         android:text="@string/Score"
                         android:textColor="@color/scoreColor"
-                        android:textSize="@dimen/score_text_size"
-                        />
+                        android:textSize="@dimen/score_text_size" />
+
                     <TextView
                         android:id="@+id/quantity_missed_throw_a"
                         style="@style/Score"
                         android:text="@string/missed"
                         android:textColor="@color/miss"
-                        android:textSize="@dimen/miss_text"/>
-
-
+                        android:textSize="@dimen/miss_text" />
 
 
                 </LinearLayout>
@@ -56,12 +55,10 @@
                 <View
                     style="@style/View"
                     android:layout_marginTop="@dimen/margin"
-                    android:background="@android:color/darker_gray"/>
+                    android:background="@android:color/darker_gray" />
 
 
-
-                <LinearLayout
-                    style="@style/layoutVertical">
+                <LinearLayout style="@style/layoutVertical">
 
 
                     <Button
@@ -72,7 +69,7 @@
                         android:onClick="changeScoreOfTeamB"
                         android:text="@string/TeamB"
                         android:textColor="@color/teamColor"
-                        android:textSize="@dimen/team_text_size"/>
+                        android:textSize="@dimen/team_text_size" />
 
                     <TextView
                         android:id="@+id/team_b_score"
@@ -87,81 +84,84 @@
                         style="@style/Score"
                         android:text="@string/missed"
                         android:textColor="@color/miss"
-                        android:textSize="@dimen/miss_text"
-                        />
-
-
+                        android:textSize="@dimen/miss_text" />
 
 
                 </LinearLayout>
 
             </LinearLayout>
 
-            <LinearLayout
-                style="@style/layoutHorizontalButton">
+            <LinearLayout style="@style/layoutHorizontalButton">
+
                 <Button
                     style="@style/Button"
                     android:onClick="addSeven"
-                    android:text="@string/button7"
-                    />
+                    android:text="@string/button7" />
+
                 <Button
                     style="@style/Button"
                     android:onClick="addNine"
-                    android:text="@string/button9"/>
+                    android:text="@string/button9" />
+
                 <Button
                     style="@style/Button"
                     android:onClick="addEight"
-                    android:text="@string/button8"/>
+                    android:text="@string/button8" />
             </LinearLayout>
 
-            <LinearLayout
-                style="@style/layoutHorizontalButton">
+            <LinearLayout style="@style/layoutHorizontalButton">
+
                 <Button
                     style="@style/Button"
                     android:onClick="addFive"
-                    android:text="@string/button5"/>
+                    android:text="@string/button5" />
+
                 <Button
                     style="@style/Button"
                     android:onClick="addEleven"
-                    android:text="@string/button11"/>
+                    android:text="@string/button11" />
+
                 <Button
                     style="@style/Button"
                     android:onClick="addTwelve"
-                    android:text="@string/button12"/>
+                    android:text="@string/button12" />
+
                 <Button
                     style="@style/Button"
                     android:onClick="addSix"
-                    android:text="@string/button6"/>
+                    android:text="@string/button6" />
 
             </LinearLayout>
 
-            <LinearLayout
-                style="@style/layoutHorizontalButton">
+            <LinearLayout style="@style/layoutHorizontalButton">
+
                 <Button
                     style="@style/Button"
                     android:onClick="addThree"
-                    android:text="@string/button3"/>
+                    android:text="@string/button3" />
 
                 <Button
                     style="@style/Button"
                     android:onClick="addTen"
-                    android:text="@string/button10"/>
+                    android:text="@string/button10" />
+
                 <Button
                     style="@style/Button"
                     android:onClick="addFour"
-                    android:text="@string/button4"/>
+                    android:text="@string/button4" />
             </LinearLayout>
 
-            <LinearLayout
-                style="@style/layoutHorizontalButton">
+            <LinearLayout style="@style/layoutHorizontalButton">
+
                 <Button
                     style="@style/Button"
                     android:onClick="addOne"
-                    android:text="@string/button1"/>
+                    android:text="@string/button1" />
+
                 <Button
                     style="@style/Button"
                     android:onClick="addTwo"
-                    android:text="@string/button2"/>
+                    android:text="@string/button2" />
 
 
             </LinearLayout>
@@ -175,15 +175,15 @@
             </LinearLayout>
 
 
-
         </LinearLayout>
+    </ScrollView>
 
     <Button
         style="@style/missButton"
         android:layout_margin="@dimen/margin"
         android:backgroundTint="@color/miss"
         android:onClick="increment"
-        android:text="@string/miss"/>
+        android:text="@string/miss" />
 
     <Button
         style="@style/resetButton"
